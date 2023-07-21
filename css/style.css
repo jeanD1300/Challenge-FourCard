@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+.header .below {
+  font-weight: 600;
+}
+.header p {
+  text-align: center;
+  width: 550px;
+  color: hsl(229, 6%, 66%);
+  margin-top: 15px;
+}
+
+/* Card */
+.container-card {
+    margin-left: 70px;
+  width: 1500px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  height: 250px;
+  width: 380px;
+}
+/* Template Card all same */
+.card1,
+.card2,
+.card3,
+.card4 {
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px 0px hsla(360, 100%, 0%, 0.1);
+  padding: 30px;
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+}
+
+.card1 h1,
+.card2 h1,
+.card3 h1,
+.card4 h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p {
+  margin-top: 10px;
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+  float: right;
+  margin: 20px;
+}
+
+/* Card 1 */
+.card1 {
+  border-top: solid 4px hsl(180, 62%, 55%);
+  background-color: hsl(180, 62%, 55%);
+  background-color: white;
+  grid-column: 1;
+  grid-row: 2;
+}
+.card2 {
+  border-top: solid 4px hsl(0, 78%, 62%);
+  background-color: hsl(0, 78%, 62%);
+  background-color: white;
+  grid-column: 2;
+}
+.card3 {
+  border-top: solid 4px hsl(34, 97%, 64%);
+  background-color: hsl(34, 97%, 64%);
+  background-color: white;
+  grid-column: 2;
+  grid-row: 3;
+}
+.card4 {
+  border-top: solid 4px hsl(212, 86%, 64%);
+  background-color: hsl(212, 86%, 64%);
+  background-color: white;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+}
