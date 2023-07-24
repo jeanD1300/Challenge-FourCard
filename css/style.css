@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .header {
   margin-top: 50px;
@@ -19,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .header h1 {
   font-weight: 200;
@@ -36,10 +38,13 @@
 
 /* Card */
 .container-card {
-  margin-left: 70px;
+
   width: 1500px;
   margin-top: 50px;
   display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -110,21 +115,21 @@
   grid-column: 3;
   grid-row: 2;
 }
+.attribution {
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 600px) {
-  .container {
-  
-  }
+ 
   .container-card {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     display: grid;
     justify-content: center;
     align-items: center;
-    display: block;
     width: 100%;
     margin: auto;
-  
   }
   .card1,
   .card2,
