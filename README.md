@@ -11,9 +11,9 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [My live site URL here](https://your-live-site-url.com)
+- Live Site URL: [My live site URL here](https://super-cactus-4b2259.netlify.app/)
 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/jeanD1300)
+- Frontend Mentor - [@JeanD1300](https://www.frontendmentor.io/profile/jeanD1300)
