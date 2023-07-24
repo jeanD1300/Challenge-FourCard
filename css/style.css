@@ -14,7 +14,7 @@
   align-items: center;
 
 }
-.header {
+.test {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -22,16 +22,16 @@
   align-items: center;
   
 }
-.header h1 {
+.test h1 {
   font-weight: 200;
   color: hsl(234, 12%, 34%);
 }
-.header .below {
+.test .below {
   font-weight: 600;
 }
-.header p {
+.test p {
   text-align: center;
-  width: 550px;
+  width: 80%;
   color: hsl(229, 6%, 66%);
   margin-top: 15px;
 }
@@ -39,7 +39,7 @@
 /* Card */
 .container-card {
 
-  width: 1500px;
+
   margin-top: 50px;
   display: grid;
   justify-items: center;
@@ -49,8 +49,8 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card {
-  height: 250px;
-  width: 380px;
+  height: 100%;
+  width: 90%;
 }
 /* Template Card all same */
 .card1,
@@ -85,6 +85,7 @@
 .card4 img {
   float: right;
   margin: 20px;
+  width: 50px;
 }
 
 /* Card 1 */
@@ -121,28 +122,40 @@
 }
 
 @media screen and (max-width: 600px) {
- 
+
   .container-card {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: auto;
+    width: 375px ;
   }
   .card1,
   .card2,
   .card3,
   .card4 {
     grid-column: 1;
-    margin: auto;
     margin-top: 30px;
+    height: 250px;
   }
   .card1 {
     grid-row: 1;
   }
   .card4 {
     grid-row: 4;
+  }
+}
+
+
+
+@media screen and (max-width: 388px) {
+  .test h1 {
+    font-size: 24px;
+  }
+
+  .test p {
+    font-size: 15px;
   }
 }
